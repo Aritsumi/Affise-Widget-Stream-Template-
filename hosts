@@ -1,0 +1,125 @@
+# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+# 0.0.0.0 door.event-bus.io # cured by Dr.Web
+127.0.0.1 wyday.com
+127.0.0.1 www.r2rdownload.com
+127.0.0.1 www.elephantafiles.com
+127.0.0.1 www.xferrecords.com
+127.0.0.1 104.28.21.50127
+127.0.0.1 cbs.wondershare.com
+127.0.0.1 www.cbs.wondershare.com
+127.0.0.1 www.wondershare.com
+127.0.0.1 cbs.wondershare.com
+127.0.0.1 www.cbs.wondershare.com
+127.0.0.1 www.wondershare.com
+127.0.0.1 www.ligastavok.ru
+127.0.0.1       activate.navicat.com
+127.0.0.1 link.redgiant.com
+127.0.0.1 52.73.146.57
+127.0.0.1 52.70.159.81
+127.0.0.1 account.jetbrains.com
+127.0.0.1 www.jetbrains.com
+127.0.0.1 www-weighted.jetbrains.com
+127.0.0.1 repo.idechajian.com
+127.0.0.1 bs.studycoder.com
+127.0.0.1 bi.studycoder.com
+127.0.0.1 *.studycoder.com
+127.0.0.1 link.redgiant.com
+127.0.0.1 52.73.146.57
+127.0.0.1 52.70.159.81
+127.0.0.1 95.84.243.16
+109.94.209.70      fitgirlrepacks.in               # Fake FitGirl site
+109.94.209.70      www.fitgirlrepacks.in           # Fake FitGirl site
+109.94.209.70      fitgirlrepacks.co               # Fake FitGirl site
+109.94.209.70      fitgirl-repacks.cc              # Fake FitGirl site
+109.94.209.70      fitgirl-repacks.to              # Fake FitGirl site
+127.0.0.1 checkhost.local
+109.94.209.70      fitgirlrepack.games             # Fake FitGirl site
+109.94.209.70      www.fitgirlrepacks.co           # Fake FitGirl site
+109.94.209.70      www.fitgirl-repacks.cc          # Fake FitGirl site
+109.94.209.70      www.fitgirl-repacks.to          # Fake FitGirl site
+109.94.209.70      www.fitgirl-repack.com          # Fake FitGirl site
+109.94.209.70      www.fitgirl-repacks.website     # Fake FitGirl site
+109.94.209.70      ww9.fitgirl-repacks.xyz         # Fake FitGirl site
+109.94.209.70      www.fitgirlrepack.games         # Fake FitGirl site
+109.94.209.70      *.fitgirl-repacks.xyz           # Fake FitGirl site
+109.94.209.70      fitgirl-repacks.xyz             # Fake FitGirl site
+109.94.209.70      fitgirl-repack.net              # Fake FitGirl site
+109.94.209.70      www.fitgirl-repack.net          # Fake FitGirl site
+109.94.209.70      fitgirlpack.site                # Fake FitGirl site
+109.94.209.70      www.fitgirlpack.site            # Fake FitGirl site
+109.94.209.70      fitgirl-repack.org              # Fake FitGirl site
+109.94.209.70      www.fitgirl-repack.org          # Fake FitGirl site
+127.0.0.1 topazlabs.com
+127.0.0.1 et.topazlabs.com
+127.0.0.1 104.22.33.115
+127.0.0.1 172.67.37.186
+127.0.0.1 idnet.ua-corp.com
+0.0.0.0            platform.wondershare.com
+0.0.0.0            activation.cyberlink.com
+0.0.0.0            pc-api.wondershare.cc
+0.0.0.0            analytics.wondershare.cc
+0.0.0.0            cloud-api.wondershare.cc
+0.0.0.0            sparrow.wondershare.com
+0.0.0.0            wae.wondershare.cc
+0.0.0.0            api.wondershare.com
+0.0.0.0            antipiracy.wondershare.com
+0.0.0.0            wondershare.com
+0.0.0.0            mail.insidews.wondershare.com
+0.0.0.0            accounts.wondershare.com
+127.0.0.1	wondershare.net
+127.0.0.1	www.wondershare.net
+127.0.0.1	a104-126-254-40.deploy.static.akamaitechnologies.com
+127.0.0.1	filmora.wondershare.com
+127.0.0.1	mobilego.wondershare.com
+127.0.0.1	support.wondershare.net
+127.0.0.1	support.wondershare.com
+127.0.0.1	cbs.wondershare.net
+127.0.0.1	statics.was.wondershare.com
+127.0.0.1	resource.wondershare.com
+127.0.0.1	myphone-download.wondershare.cc
+127.0.0.1	cc-antipiracy.wondershare.cc
+127.0.0.1	dc.wondershare.cc
+127.0.0.1	cbs.wondershare.cn
+127.0.0.1	product-api.wondershare.com
+127.0.0.1	myphone-api.wondershare.cc
+127.0.0.1	order-api.wondershare.com
+127.0.0.1	media.io
+127.0.0.1	www.media.io
+127.0.0.1	keepvid.cc
+127.0.0.1	www.keepvid.cc
+127.0.0.1	52.90.fd9f.ip4.static.sl-reverse.com
+127.0.0.1	53.90.fd9f.ip4.static.sl-reverse.com
+127.0.0.1	srv1.keepvid.cc
+127.0.0.1	f3.34.9905.ip4.static.sl-reverse.com
+127.0.0.1	pop.wondershare.com
+127.0.0.1	a104-123-50-16.deploy.static.akamaitechnologies.com
+127.0.0.1	a104-123-50-99.deploy.static.akamaitechnologies.com
+127.0.0.1	pop.iskysoft.com
+127.0.0.1	pop.aimersoft.com
+127.0.0.1	myphone-connect.wondershare.cc
+127.0.0.1	ori-myphone-download.wondershare.cc
+127.0.0.1	api.300624.com
+127.0.0.1	pc-api.300624.com
+127.0.0.1	pixcut.wondershare.com.w.kunlunsl.com
+127.0.0.1	cloud-api.300624.com
+127.0.0.1	wae.wondershare.cc.w.cdngslb.com
+127.0.0.1	account.wondershare.com

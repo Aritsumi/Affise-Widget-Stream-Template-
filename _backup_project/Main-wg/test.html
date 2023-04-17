@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head> <!-- "Шапка" странички (Грубо сказанно, но в основном нужна для настройки) -->
+
+    <!--  Мета-настройки -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script>
+        const settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "http://api-admachina.affise.com/3.0/stats/conversions?API-Key=c14e1f30a21441d4d41339f17f2098ed&date_from=2023-01-01&date_to=2048-03-09&subid2=moakaash&status=1&limit=1&device=desktop",
+            "method": "GET",
+        };
+
+        $.ajax(settings).done(function (response)           // Ajax (функция jQuery) получает ответ от API он назначает ответ "response"
+        {
+            console.log(response);                          // В консоль отображаеться ответ "response"
+            var content = response.pagination.total_count;  // Создается переменная с именем "content" и устанавливается равной "response.pagination.total_count" (значение присоеденёных рефералов у стримера)
+            $("#OUTPUT_api").append(content);                   // Закитывает значение "content" на отображение в id "OUTPUT_api"    
+            $("#OUTPUT_2").append(content);
+            var OUTPUT_2 = content;
+
+        });
+        
+    </script>
+</head>
+
+<body>
+    <p id="text">
+        <span id="OUTPUT_api"></span> из <span id="momo"></span>
+    </p>
+
+    <script>
+        var OUTPUT_3 
+        $("#OUTPUT_3").append(OUTPUT_2);  
+    </script>
+
+    <!-- Скрипт: "Progress bar" -->
+
+
+    <p id="text">
+        Переменная _ : <span id="OUTPUT_2"></span>
+        <a></a>
+        Переменная # : <span id="OUTPUT_3"></span>
+    </p>
+
+
+
+</body>
+
+
+<!---------------------------------------->
+<!-- Code by Arkomiko                   -->
+<!---------------------------------------->
+<!-- Social                             -->
+<!-- VK : vk.com/arkomiko               -->
+<!-- TG : https://t.me/ArkomikoGroup    -->
+<!---------------------------------------->
+<!-- Всем чая и печенек ^_^             -->
+
+</html>

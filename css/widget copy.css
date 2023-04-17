@@ -1,0 +1,17 @@
+#console {
+    width: 1509ch;
+    contain-intrinsic-height: 1.2em;
+    content-visibility: visible;
+    content-visibility: auto;
+    line-height: 1.2em;
+    margin: 0;
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+
+}
+
+#sos_widget{
+    background: transparent url("../img/sos_widget.png") no-repeat scroll 50% 50%;
+}

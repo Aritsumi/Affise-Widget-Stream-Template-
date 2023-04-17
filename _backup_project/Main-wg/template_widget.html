@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head> <!-- "Шапка" странички (Грубо сказанно, но в основном нужна для настройки) -->
+
+    <!--  Мета-настройки -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Дополнительные библиотеки -->
+    <!-- JQuery (Web)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- bootstrap 5.3 (Local)-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Название странички (видно в браузере) -->
+    <title>Template Widget (by Ariko)</title>
+
+    <!-- Скрипт Присоеденения API -->
+    <script>
+        //----------------------------------------------------------------------------------------------
+        // Небольшая инструкция по URL ссылкам c API.
+        //----------------------------------------------------------------------------------------------
+        // Пример "http://domen.com/3.0/stats/conversions?API-Key=9999999&date_from=2023-01-01&date_to=2048-03-09&subid2=moakaash&status=1&limit=1&device=desktop",
+
+        // [http://domen.com/] - "Домен"
+        // [../3.0/stats/conversions] - "Конечный путь где находиться та, или иная функция API"
+        // [../conversions?] - Знак "?" после пути это запрос. 
+
+        // Если запросов или же условий больше то между ними ставиться знак "&" (пример: [?день&месяц&год] условно запрашивал фунцкию дня,месяца и года)
+
+        // Состав запросов из примера для виджета
+        // ?API-Key=9999999 === API Ключь для потключения
+        // &date_from=2023-01-01 === В "conversions" находиться отчёт где надо прописывать условия времени "от" даты 
+        // &date_to=2048-03-09 === "до" Даты 
+        // &subid2=moakaash === ВАЖНО - это условие - "Саб_Айди=Ник" стримера
+        // &status=1&limit=1 === необходимые условия по документации
+        // &device=desktop === Обозначение платформы/дивайса
+        //----------------------------------------------------------------------------------------------
+        const settings = { //Константа - "настройки"
+
+            //Лучше не трогать!
+            "async": true,          //
+            "crossDomain": true,    //
+
+            //URL ЗАПРОС (МЕНЯТЬ ПРИ НЕОБХОДИМОСТИ)
+            "url": "http://api-admachina.affise.com/3.0/stats/conversions?API-Key=c14e1f30a21441d4d41339f17f2098ed&date_from=2023-01-01&date_to=2048-03-09&subid2=moakaash&status=1&limit=1&device=desktop",
+
+            //Метод запроса (Не трогать по соображению безопасности)
+            "method": "GET",
+
+
+            //*В случае, если в url не работает "?API-Key=" разкоментировать код ниже:
+            // "headers": {
+            //     "API-Key": "c14e1f30a21441d4d41339f17f2098ed"
+            // }*
+        };
+
+        $.ajax(settings).done(function (response)           // Ajax (функция jQuery) получает ответ от API он назначает ответ "response"
+        {
+            console.log(response);                          // В консоль отображаеться ответ "response"
+            var content = response.pagination.total_count;  // Создается переменная с именем "content" и устанавливается равной "response.pagination.total_count" (значение присоеденёных рефералов у стримера)
+            $("#OUTPUT_api").append(content);                   // Закитывает значение "content" на отображение в id "OUTPUT_api"
+        });
+    </script>
+
+
+    <!-- Скрипт автообновления -->
+
+    <!-- <script>
+        setTimeout(function () {
+            location.reload();
+        }, 15000);
+    </script> -->
+
+    <!-- <script>
+        $(document).ready(function () {
+            show();
+            setInterval('show()', 45000);
+        });
+    </script> -->
+
+
+    <!-- Cтиль -->
+
+    <style>
+        body {
+            /* Установки всей страницы */
+        }
+
+        #text {
+            /* Стиль шрифта */
+            font-family: Arial, Helvetica, sans-serif;
+            /* Размер шрифта */
+            font-size: 70px;
+        }
+
+        #OUTPUT_api {
+            /* Установки вывода */
+        }
+    </style>
+</head>
+
+<body> <!-- "Тело" странички (Отображает элементы на страничке) -->
+
+
+
+
+    <!-- Вывод значения "зареганых рефералов" -->
+    <p id="text"><span id="OUTPUT_api"></span> из <span id="momo"></span></p>
+
+
+
+    <!-- Скрипт: "Progress bar" -->
+
+    <script>
+
+
+        var OUTPUT_T = 2;
+        var momo = 10;                      // Сколько надо? 
+
+        var one_pr = momo / 100;              // [Автоматически!]
+        $("#momo").append(momo);
+        var api_out = OUTPUT_T / one_pr;              // [Автоматически!]
+
+        var p_st_width = 650;               // Ширина бара (В пикселях)
+        var p_st_height = 38;               // Высота бара (В пикселях)
+    </script>
+
+    <!-- Вывод значения "Progress bar" -->
+    <p></p>
+    <div id="p_elem" class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+        aria-valuemax="100" style="height: 38px;">
+        <div id="pb_elem" class="progress-bar" style="width: 1%;"></div>
+
+
+        <script>
+            let p_elem = document.querySelector('#p_elem');
+            p_elem.ariaValueMax = momo;
+            p_elem.style.width = p_st_width + 'px';
+            p_elem.style.height = p_st_height + 'px';
+
+            let pb_elem = document.querySelector('#pb_elem');
+            pb_elem.style.width = api_out + '%';
+        </script>
+
+
+
+        <!-- При жилании можно дополнить страничку стилем и контентом -->
+
+
+
+
+</body>
+
+
+<!---------------------------------------->
+<!-- Code by Arkomiko                   -->
+<!---------------------------------------->
+<!-- Social                             -->
+<!-- VK : vk.com/arkomiko               -->
+<!-- TG : https://t.me/ArkomikoGroup    -->
+<!---------------------------------------->
+<!-- Всем чая и печенек ^_^             -->
+
+</html>

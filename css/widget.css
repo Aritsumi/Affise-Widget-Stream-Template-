@@ -1,0 +1,66 @@
+#console {
+    width: 1509ch;
+    contain-intrinsic-height: 1.2em;
+    content-visibility: visible;
+    content-visibility: auto;
+    line-height: 1.2em;
+    margin: 0;
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+
+}
+
+#sos_widget{
+    background: transparent url("../img/sos_widget.png") no-repeat scroll 50% 50%;
+}
+
+body {
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    overscroll-behavior-y: none;
+    background-color: transparent;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    text-align: left;
+    margin: 0px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+element.style {
+    min-height: 7vw;
+}
+
+.widget-goal .goal-header + .goal-body[data-v-bda28b3c] {
+    margin-top: 0.5vw;
+}
+
+.widget-goal .goal-body[data-v-bda28b3c] {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    min-height: 7vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}

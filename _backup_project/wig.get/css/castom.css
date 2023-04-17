@@ -1,0 +1,16 @@
+#out_text_line {
+    /* Установки вывода */
+    /* Стиль шрифта */
+    font-family: monospace, sans-serif;
+    /* Размер шрифта */
+    font-size: 17px;
+    color:brown;
+}
+#total_count {
+    /* Установки вывода */
+    /* Стиль шрифта */
+    font-family: monospace, sans-serif;
+    /* Размер шрифта */
+    font-size: 17px;
+    color:rgb(0, 102, 255);
+}

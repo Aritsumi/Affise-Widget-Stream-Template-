@@ -1,0 +1,8 @@
+{
+    "url": "https://api-admachina.affise.com/3.0/stats/conversions/",
+    "raw_url": "https://api-admachina.affise.com/3.0/stats/conversions?API-Key=c14e1f30a21441d4d41339f17f2098ed",
+    "method": "get",
+    "queries": {
+        "API-Key": "c14e1f30a21441d4d41339f17f2098ed"
+    }
+}
